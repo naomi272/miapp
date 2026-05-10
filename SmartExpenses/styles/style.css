@@ -1,0 +1,100 @@
+/* FONDO GENERAL */
+.stApp {
+    background: linear-gradient(
+        135deg,
+        #0f172a,
+        #111827,
+        #1e293b
+    );
+    color: white;
+}
+
+/* SIDEBAR */
+section[data-testid="stSidebar"] {
+    background-color: #111827;
+    border-right: 1px solid #374151;
+}
+
+/* TITULOS */
+h1, h2, h3 {
+    color: white !important;
+    font-weight: bold;
+}
+
+/* METRICS */
+[data-testid="metric-container"] {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    padding: 20px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+}
+
+[data-testid="metric-container"]:hover {
+    transform: scale(1.03);
+    border: 1px solid #3b82f6;
+}
+
+/* BOTONES */
+.stButton > button {
+    width: 100%;
+    border-radius: 12px;
+    height: 3em;
+    border: none;
+    background: linear-gradient(
+        90deg,
+        #2563eb,
+        #3b82f6
+    );
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.stButton > button:hover {
+    transform: scale(1.02);
+    background: linear-gradient(
+        90deg,
+        #1d4ed8,
+        #2563eb
+    );
+}
+
+/* INPUTS */
+.stTextInput > div > div > input,
+.stNumberInput input,
+.stTextArea textarea,
+.stDateInput input {
+    border-radius: 10px !important;
+    background-color: #1f2937 !important;
+    color: white !important;
+    border: 1px solid #374151 !important;
+}
+
+/* SELECTBOX */
+.stSelectbox div[data-baseweb="select"] {
+    background-color: #1f2937;
+    border-radius: 10px;
+}
+
+/* TABLAS */
+[data-testid="stDataFrame"] {
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid #374151;
+}
+
+/* DIVISORES */
+hr {
+    border-color: #374151;
+}
+
+/* ALERTAS */
+.stSuccess {
+    border-radius: 10px;
+}
+
+.stInfo {
+    border-radius: 10px;
+}
